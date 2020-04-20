@@ -1,5 +1,7 @@
 package exercice;
 
+//ABABABABAB
+
 public class StateContextDemo {
 	
 	public static void main(String[] args) {

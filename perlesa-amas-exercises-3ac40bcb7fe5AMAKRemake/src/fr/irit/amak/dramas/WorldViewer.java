@@ -7,12 +7,13 @@ import java.util.ArrayList;
 import fr.irit.smac.amak.Agent;
 import fr.irit.smac.amak.Scheduling;
 import fr.irit.smac.amak.ui.DrawableUI;
+import fr.irit.smac.amak.ui.VUI;
 
 /**
  * This class is used to display the environment and the drones
  *
  */
-public class WorldViewer extends DrawableUI<DrAmas>{
+public class WorldViewer extends VUI{
 
 	/**
 	 * The size of the areas
@@ -29,7 +30,9 @@ public class WorldViewer extends DrawableUI<DrAmas>{
 		/**
 		 * Auto start the rendering thread and allow control on it
 		 */
-		super(Scheduling.DEFAULT, _drAmas);
+		//super(Scheduling.DEFAULT, _drAmas);
+		
+		super(null);
 	}
 
 	/**

@@ -1,18 +1,17 @@
 package fr.irit.amak.dramas;
 
-import fr.irit.smac.amak.Agent;
 import fr.irit.smac.amak.AgentBuilder;
 
 public class DroneBuilder extends AgentBuilder<DrAmas, World>{
 
 	@Override
-	public void buildBehaviorStates(Agent<DrAmas, World> drone) {
-		agent.setBehaviorState(new DroneBehaviorStates((Drone) drone));
+	public void buildBehaviorStates() {
+		agent.setBehaviorState(new DroneBehaviorStates((Drone) agent));
 		
 	}
 
 	@Override
-	public void buildAgentPhase(Agent<DrAmas, World> agent) {
+	public void buildAgentPhase() {
 		// TODO Auto-generated method stub
 		
 	}

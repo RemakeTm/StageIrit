@@ -59,7 +59,7 @@ public class Drone extends Agent<DrAmas, World> {
 	}
 	@Override
 	protected void onRenderingInitialization() {
-		drawable = VUI.get().createRectangle(dx*10, dy*10, 10,10);
+		drawable = VUI.get().createAndAddRectangle(dx*10, dy*10, 10,10);
 		drawable.setLayer(1);
 		drawable.setColor(Color.WHITE);
 	}

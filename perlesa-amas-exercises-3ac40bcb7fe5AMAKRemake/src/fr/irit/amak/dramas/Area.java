@@ -51,7 +51,7 @@ public class Area {
 			this.outdateFactor = 1;
 		
 
-		drawable = VUI.get().createRectangle(x*10, y*10, 10,10);
+		drawable = VUI.get().createAndAddRectangle(x*10, y*10, 10,10);
 		drawable.setLayer(0);
 	}
 

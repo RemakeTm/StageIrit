@@ -12,6 +12,7 @@ import fr.irit.smac.amak.Scheduling;
 import fr.irit.smac.amak.ui.MainWindow;
 import fr.irit.smac.amak.ui.VUI;
 import fr.irit.smac.lxplot.LxPlot;
+import javafx.scene.control.MenuItem;
 
 /**
  * This class represents the AMAS
@@ -61,19 +62,19 @@ public class DrAmas extends Amas<World> {
 		DrAmas drAmas = new DrAmas(new World());
 
 		// new WorldViewer(drAmas);
-		MainWindow.addMenuItem("Remove 10 drones", l -> {
+		/*MainWindow.addToMenu("Remove 10 drones", new MenuItem()-> {
 			for (int i = 0; i < 10; i++) {
 				drAmas.getAgents().get(drAmas.getEnvironment().getRandom().nextInt(drAmas.getAgents().size()))
 						.destroy();
 			}
 		});
-		MainWindow.addMenuItem("Add 10 drones", l -> {
+		MainWindow.addToMenu("Add 10 drones", l -> {
 			for (int i = 0; i < 10; i++) {
 
 				new Drone(drAmas, drAmas.getEnvironment().getRandom().nextInt(World.WIDTH),
 						drAmas.getEnvironment().getRandom().nextInt(World.HEIGHT));
 			}
-		});
+		});*/
 
 	}
 

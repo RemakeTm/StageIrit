@@ -6,7 +6,6 @@ import java.util.ArrayList;
 
 import fr.irit.smac.amak.Agent;
 import fr.irit.smac.amak.Scheduling;
-import fr.irit.smac.amak.ui.DrawableUI;
 import fr.irit.smac.amak.ui.VUI;
 
 /**
@@ -43,7 +42,7 @@ public class WorldViewer extends VUI{
 	/**
 	 * Display the state of the system
 	 */
-	@Override
+	/*@Override
 	protected void onDraw(Graphics2D arg0) {
 		if (getAmas() != null) {
 			// Draw areas
@@ -73,7 +72,7 @@ public class WorldViewer extends VUI{
 						AREA_SIZE, AREA_SIZE);
 			}
 		}
-	}
+	}*/
 
 	/**
 	 * Helper function aiming at converting a discrete value to a screen value
@@ -88,11 +87,11 @@ public class WorldViewer extends VUI{
 	/**
 	 * When dragging the mouse, add critical areas
 	 */
-	@Override
+	/*@Override
 	protected void onMouseDragged(int x, int y) {
 		for (int rx = -2; rx <= 2; rx++)
 			for (int ry = -2; ry <= 2; ry++)
 				getAmas().getEnvironment().getAreaByPosition(x / AREA_SIZE + rx, y / AREA_SIZE + ry).setCritical();
-	}
+	}*/
 
 }

@@ -1,6 +1,6 @@
 package fr.irit.amak.dramas;
 
-import java.awt.Color;
+import javafx.scene.paint.Color;
 
 import fr.irit.smac.amak.ui.VUI;
 import fr.irit.smac.amak.ui.drawables.DrawableRectangle;
@@ -101,7 +101,7 @@ public class Area {
 
 		if (timeSinceLastSeen > 1000)
 			timeSinceLastSeen = 1000;
-		drawable.setColor(new Color((float) timeSinceLastSeen / 1000f, 1 - (float) timeSinceLastSeen / 1000f, 0f));
+		drawable.setColor(Color.color((double) timeSinceLastSeen / 1000f, 1 - (double) timeSinceLastSeen / 1000f, 0d));
 	}
 
 	/**

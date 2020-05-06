@@ -1,6 +1,6 @@
 package fr.irit.amak.dramas;
 
-import java.awt.Color;
+import javafx.scene.paint.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

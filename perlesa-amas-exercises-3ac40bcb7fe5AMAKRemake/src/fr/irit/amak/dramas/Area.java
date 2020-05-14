@@ -51,8 +51,8 @@ public class Area {
 			this.outdateFactor = 1;
 		
 
-		drawable = VUI.get().createAndAddRectangle(x*10, y*10, 10,10);
-		drawable.setLayer(0);
+		//drawable = VUI.get().createAndAddRectangle(x*10, y*10, 10,10);
+		//drawable.setLayer(0);
 	}
 
 	/**
@@ -101,7 +101,7 @@ public class Area {
 
 		if (timeSinceLastSeen > 1000)
 			timeSinceLastSeen = 1000;
-		drawable.setColor(Color.color((double) timeSinceLastSeen / 1000f, 1 - (double) timeSinceLastSeen / 1000f, 0d));
+		//drawable.setColor(Color.color((double) timeSinceLastSeen / 1000f, 1 - (double) timeSinceLastSeen / 1000f, 0d));
 	}
 
 	/**

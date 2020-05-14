@@ -16,6 +16,8 @@ public class DroneBuilder extends AgentBuilder<DrAmas, World>{
 		
 	}
 	
-	
+	public void setDrone(Drone drone) {
+		this.agent = drone;
+	}
 
 }

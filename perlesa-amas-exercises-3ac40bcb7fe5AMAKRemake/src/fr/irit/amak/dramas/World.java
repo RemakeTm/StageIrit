@@ -11,6 +11,7 @@ import fr.irit.smac.amak.Scheduling;
 public class World extends Environment {
 	public World(Object...params) {
 		super(Scheduling.DEFAULT, params);
+		System.out.println("World - World - End");
 	}
 
 	/**
@@ -31,12 +32,14 @@ public class World extends Environment {
 	 */
 	@Override
 	public void onInitialization() {
+		System.out.println("World - onInitialization - Start");
 		areas = new Area[HEIGHT][WIDTH];
 		for (int x = 0; x < WIDTH; x++) {
 			for (int y = 0; y < HEIGHT; y++) {
 				areas[y][x] = new Area(x, y);
 			}
 		}
+		System.out.println("World - onInitialization - End");
 	}
 
 	/**

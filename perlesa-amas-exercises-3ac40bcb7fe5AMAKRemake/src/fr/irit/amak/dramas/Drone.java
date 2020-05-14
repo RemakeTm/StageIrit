@@ -57,7 +57,8 @@ public class Drone extends Agent<DrAmas, World> {
 		dx = (int) params[0];
 		dy = (int) params[1];
 	}
-	@Override
+	
+	/*@Override
 	protected void onRenderingInitialization() {
 		drawable = VUI.get().createAndAddRectangle(dx*10, dy*10, 10,10);
 		drawable.setLayer(1);
@@ -100,7 +101,7 @@ public class Drone extends Agent<DrAmas, World> {
 	}
 
 
-	@Override
+	/*@Override
 	public void onUpdateRender() {
 		drawable.move(dx*10, dy*10);
 	}

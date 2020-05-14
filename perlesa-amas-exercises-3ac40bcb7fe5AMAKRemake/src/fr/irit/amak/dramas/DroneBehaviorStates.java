@@ -39,6 +39,7 @@ public class DroneBehaviorStates extends AgentBehaviorStates<DrAmas, World>{
 	 */
 	@Override
 	protected void onPerceive() {
+		System.out.println("Perception");
 		// Clear the last set neighbors list
 		clearNeighbors();
 		// Check areas in a range of 3x3

@@ -45,9 +45,16 @@ public class DrAmas extends Amas<World> {
 	 */
 	@Override
 	protected void onInitialAgentsCreation() {
-		for (int i = 0; i < INITIAL_DRONE_COUNT; i++)
-			new Drone(this, getEnvironment().getRandom().nextInt(World.WIDTH), getEnvironment().getRandom().nextInt(World.HEIGHT));
-
+		System.out.println("Création drones");
+		Drone drone = null;
+		DroneBuilder droneBuilder;
+		for (int i = 0; i < INITIAL_DRONE_COUNT; i++) {
+			drone = new Drone(this, getEnvironment().getRandom().nextInt(World.WIDTH), getEnvironment().getRandom().nextInt(World.HEIGHT));
+			droneBuilder = new DroneBuilder();
+			droneBuilder.setDrone(drone);
+			droneBuilder.buildBehaviorStates();
+			droneBuilder.buildAgentPhase();
+		}
 	}
 
 	/**
@@ -57,11 +64,17 @@ public class DrAmas extends Amas<World> {
 	 *            Arguments of the problem (not used)
 	 */
 	public static void main(String[] args) {
+		
+		//System.out.println("Début Main, instruction Vui.get...");
 
-		VUI.get().setDefaultView(100, -400, -300);
+		//VUI.get().setDefaultView(100, -400, -300);
+		System.out.println("DrAmas - Main - Start");
 		DrAmas drAmas = new DrAmas(new World());
-
-		// new WorldViewer(drAmas);
+		
+		drAmas.start();
+		
+		// System.out.println("new WorldViewer");
+		//new WorldViewer(drAmas);
 		/*MainWindow.addToMenu("Remove 10 drones", new MenuItem()-> {
 			for (int i = 0; i < 10; i++) {
 				drAmas.getAgents().get(drAmas.getEnvironment().getRandom().nextInt(drAmas.getAgents().size()))
